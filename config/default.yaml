@@ -1,0 +1,22 @@
+server:
+  host: 127.0.0.1
+  port: 8765
+
+engines:
+  default: qoder          # qoder | cursor
+  models:
+    qoder: qmodel_38max
+    cursor: grok-4.6
+
+runtime:
+  max_concurrency: 2
+  timeout_sec: 180
+  max_turns: 2
+  log_prompts: false
+
+paths:
+  workspace: data/workspace
+
+auth:
+  users:
+    - { username: admin, role: admin }

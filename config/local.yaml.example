@@ -1,0 +1,13 @@
+# 复制为 local.yaml 后按本机修改。不要提交 local.yaml。
+# engines:
+#   default: qoder
+#   models:
+#     qoder: qmodel_38max
+#     cursor: grok-4.6
+#
+# runtime:
+#   max_concurrency: 2
+#   timeout_sec: 180
+#
+# paths:
+#   workspace: data/workspace

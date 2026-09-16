@@ -1,0 +1,33 @@
+# 本机覆盖与密钥，勿提交
+config/local.yaml
+config/secrets.env
+config/**/*.bak
+data/
+.env
+.env.*
+!.env.example
+
+# 依赖与虚拟环境
+.venv/
+backend/.venv/
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+backend/app/static/
+
+# 缓存与本地产物
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+*.log
+
+# 编辑器 / 系统
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
