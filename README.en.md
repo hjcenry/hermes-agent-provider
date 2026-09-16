@@ -12,6 +12,10 @@ Hermes talks to this repo as a **custom provider**. The wire format is the Chat 
 
 ![Settings home](docs/images/settings-home.png)
 
+Hermes after a successful connect (`cursor/grok-4.6` via `http://127.0.0.1:8765/v1`):
+
+![Hermes connected](docs/images/hermes-connected.png)
+
 ## Get running in 5 minutes
 
 Finish these 6 steps in order. After that, Hermes can chat through your local Cursor / Qoder account.
@@ -137,7 +141,9 @@ model:
   discover_models: true
 ```
 
-Send a short chat. To switch engines, change the settings page and keep `model: default`, or `/model cursor/grok-4.6`.
+Send a short chat. A live session shows Provider: `localagent` and this service’s `/v1` as the gateway, as in the screenshot above.
+
+To switch engines, change the settings page and keep `model: default`, or `/model cursor/grok-4.6`.
 
 Do not point vision / summarizer helper models at this service. Recaps would burn another engine turn.
 

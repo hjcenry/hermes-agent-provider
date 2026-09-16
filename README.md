@@ -12,6 +12,10 @@ Hermes 把它当成 **custom provider**。接线协议是 Hermes 要求的 Chat 
 
 ![设置页主页](docs/images/settings-home.png)
 
+Hermes 接上之后（这里是 `cursor/grok-4.6`，入口 `http://127.0.0.1:8765/v1`）：
+
+![Hermes 已连通](docs/images/hermes-connected.png)
+
 ## 5 分钟上手
 
 按顺序做完这 6 步，就能在 Hermes 里用本机 Cursor / Qoder 对话。
@@ -137,7 +141,9 @@ model:
   discover_models: true
 ```
 
-发一句闲聊。换引擎：改设置页后 Hermes 继续用 `model: default`，或 `/model cursor/grok-4.6`。
+发一句闲聊。接上后 Hermes 会话里会显示 Provider: `localagent`、入口为本服务 `/v1`，如上图。
+
+换引擎：改设置页后 Hermes 继续用 `model: default`，或 `/model cursor/grok-4.6`。
 
 不要把 vision / summarizer 等辅助模型指到本服务，回顾会再烧一轮引擎额度。
 
